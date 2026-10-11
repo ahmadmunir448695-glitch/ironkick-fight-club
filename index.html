@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ironkick Fight & Fitness Club — Taekwondo, Boxing & Fitness</title>
+<meta name="description" content="Taekwondo, boxing, fitness, yoga and cardio classes for kids, ladies and adults. First class free. WhatsApp 0305 4486950.">
+<meta name="theme-color" content="#D7261E">
+<meta property="og:title" content="Ironkick Fight & Fitness Club — Taekwondo, Boxing & Fitness">
+<meta property="og:description" content="Taekwondo, boxing, fitness, yoga and cardio classes for kids, ladies and adults. First class free. WhatsApp 0305 4486950.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 3 L35 9 V20 C35 29 28 35 20 37 C12 35 5 29 5 20 V9 Z' fill='%23111111'/%3E%3Cpath d='M15 12 V28 M15 20 L25 12 M18 18 L25 28' fill='none' stroke='%23D7261E' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}section[id]{scroll-margin-top:96px}
+
+body{margin:0;background:#F6F3EE}
+a{color:#111111}a:hover{color:#D7261E}
+@keyframes inL{from{opacity:0;transform:translateX(-140px)}to{opacity:1;transform:none}}
+@keyframes inR{from{opacity:0;transform:translateX(140px)}to{opacity:1;transform:none}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hero-l{animation:inL 1s cubic-bezier(.2,.8,.2,1) both}
+.hero-r{animation:inR 1s .15s cubic-bezier(.2,.8,.2,1) both}
+.marq{animation:marq 26s linear infinite}
+.bob{animation:bob 3.2s ease-in-out infinite}
+@supports (animation-timeline: view()){
+.sl{animation:inL linear both;animation-timeline:view();animation-range:entry 5% cover 35%}
+.sr{animation:inR linear both;animation-timeline:view();animation-range:entry 5% cover 35%}
+}
+.nl{color:#2A2B30;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.02em;padding:10px 2px;border-bottom:2px solid transparent}
+.nl:hover{color:#111111;border-bottom-color:#D7261E}
+.fl{color:#C9C6BF;text-decoration:none;font-weight:500}
+.fl:hover{color:#FFFFFF}
+.lift:hover{box-shadow:0 18px 40px rgba(17,17,17,0.12)}
+.sched td,.sched th{border-bottom:1px solid #ECE8E0;padding:16px 14px;text-align:left;vertical-align:top}
+.field{width:100%;box-sizing:border-box;min-height:52px;border-radius:12px;border:1.5px solid #DAD5CB;background:#F6F3EE;color:#111111;font:500 16px 'Space Grotesk',sans-serif;padding:14px 16px}
+.field:focus{outline:2px solid #D7261E;outline-offset:1px;background:#FFFFFF}
+.ph{background-color:#ECE8E0;background-image:repeating-linear-gradient(135deg,rgba(17,17,17,0.05) 0 14px,transparent 14px 28px)}
+@media (prefers-reduced-motion: reduce){.hero-l,.hero-r,.sl,.sr,.marq,.bob{animation:none}}
+@keyframes rise{from{opacity:0;transform:translateY(48px) skewY(3deg)}to{opacity:1;transform:none}}
+@keyframes unclip{from{clip-path:inset(0 0 100% 0 round 28px);scale:1.08}to{clip-path:inset(0 0 0 0 round 28px);scale:1}}
+@keyframes drift{from{transform:translateX(10%)}to{transform:translateX(-12%)}}
+@keyframes pop{from{opacity:0;transform:translateY(50px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes hdr{to{box-shadow:0 12px 30px rgba(17,17,17,.14)}}
+@keyframes wobble{0%,100%{transform:rotate(10deg) scale(1)}50%{transform:rotate(-8deg) scale(1.06)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 22px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@keyframes heroimg{from{clip-path:inset(0 0 0 100% round 30px)}to{clip-path:inset(0 0 0 0 round 30px)}}
+.rise{animation:rise 1s .25s cubic-bezier(.2,.8,.2,1) both}
+.heroimg{animation:heroimg 1.1s .3s cubic-bezier(.7,0,.2,1) both}
+.wobble{animation:wobble 4s ease-in-out infinite}
+.pulse{animation:pulse 2s ease-out infinite}
+.pic{transition:rotate .4s ease,scale .4s ease}
+.pic:hover{rotate:-1.5deg;scale:1.02}
+.lift{transition:translate .25s ease,box-shadow .25s ease}
+.lift:hover{translate:0 -6px}
+a[style*="border-radius: 999px"]{transition:translate .2s ease,box-shadow .2s ease}
+a[style*="border-radius: 999px"]:hover{translate:0 -3px;box-shadow:0 8px 0 #111111}
+@supports (animation-timeline: view()){
+.para{animation:drift linear both;animation-timeline:view()}
+.pic{animation:unclip linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+.lift{animation:pop linear both;animation-timeline:view();animation-range:entry 0% cover 25%}
+}
+@supports (animation-timeline: scroll()){
+.hdr{animation:hdr linear both;animation-timeline:scroll();animation-range:0 240px}
+}
+@media (prefers-reduced-motion: reduce){.rise,.heroimg,.wobble,.pulse,.para,.pic,.lift,.hdr{animation:none}}
+</style>
+</head>
+<body>
+<div style="width: 100%; overflow-x: clip; background: #F6F3EE; color: #111111; font-family: 'Space Grotesk', sans-serif; font-size: 17px; line-height: 1.55">
+
+<header class="hdr" style="position: sticky; top: 0; z-index: 50; background: #FFFFFF; border-bottom: 1.5px solid #111111">
+<div aria-hidden="true" style="display: flex; height: 5px"><span style="flex: 1; background: #1F4FD1"></span><span style="flex: 1; background: #D7261E"></span><span style="flex: 1; background: #C6F432"></span></div>
+<div style="max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #111111">
+<svg width="46" height="46" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 L35 9 V20 C35 29 28 35 20 37 C12 35 5 29 5 20 V9 Z" fill="#111111"></path><path d="M15 12 V28 M15 20 L25 12 M18 18 L25 28" fill="none" stroke="#D7261E" stroke-width="3.2" stroke-linecap="round"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1">
+<span style="font-family: 'Archivo Black', sans-serif; font-size: 24px; letter-spacing: 0.02em">IRONKICK</span>
+<span style="font-weight: 600; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #5C5E66; margin-top: 5px">Fight &amp; Fitness Club</span>
+</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 26px; align-items: center">
+<a class="nl" href="#taekwondo">Taekwondo</a>
+<a class="nl" href="#boxing">Boxing</a>
+<a class="nl" href="#fitness">Fitness</a>
+<a class="nl" href="#schedule">Schedule</a>
+<a class="nl" href="#plans">Plans</a>
+<a href="special-kids.html" style="background: #6B3FD6; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 9px 16px; border-radius: 999px">Special Kids</a>
+<a href="ladies.html" style="background: #C2185B; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 9px 16px; border-radius: 999px">Ladies</a>
+<a class="nl" href="#contact">Contact</a>
+</nav>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+<a href="https://wa.me/923054486950" style="height: 48px; padding: 0 16px; border-radius: 999px; background: #25D366; color: #111111; text-decoration: none; font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 8px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M9 9.5c.3 2.2 2.3 4.2 4.5 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>0305 4486950</a>
+<a href="#contact" style="height: 48px; padding: 0 22px; border-radius: 999px; background: #D7261E; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; display: flex; align-items: center">Free trial</a>
+</div>
+</div>
+</header>
+
+<section id="top" style="max-width: 1280px; margin: 0 auto; padding: 72px 24px 96px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div class="hero-l" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="background: #1F4FD1; color: #FFFFFF; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 14px; border-radius: 999px">Taekwondo</span>
+<span style="background: #111111; color: #FFFFFF; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 14px; border-radius: 999px">Boxing</span>
+<span style="background: #C6F432; color: #111111; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 14px; border-radius: 999px">Fitness</span>
+</div>
+<h1 class="rise" style="margin: 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(50px, 6.6vw, 100px); line-height: 0.98; letter-spacing: -0.015em; text-transform: uppercase">Unleash the <span style="color: #D7261E">fighter</span> within.</h1>
+<p style="margin: 0; max-width: 520px; font-size: 20px; color: #44464D">High kicks, sharp punches and real conditioning — all under one roof. Classes for kids, ladies and adults, from first-timers to competitors.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#contact" style="background: #D7261E; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 17px; padding: 18px 28px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px">Book your free class <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+<a href="https://wa.me/923054486950" style="border: 2px solid #111111; color: #111111; text-decoration: none; font-weight: 700; font-size: 17px; padding: 16px 24px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z" fill="none" stroke="#1C9C4C" stroke-width="2.2" stroke-linejoin="round"></path><path d="M9 9.5c.3 2.2 2.3 4.2 4.5 4.6" fill="none" stroke="#1C9C4C" stroke-width="2.2" stroke-linecap="round"></path></svg>Chat on WhatsApp</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 28px; padding-top: 6px; font-weight: 600; font-size: 16px; color: #2A2B30">
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#D7261E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>Kids · Teens · Adults</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#D7261E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>Ladies timings</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" fill="none" stroke="#D7261E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>First class free</span>
+</div>
+</div>
+<div class="hero-r" style="flex: 1 1 520px; min-width: 0; position: relative">
+<div aria-hidden="true" style="position: absolute; inset: 22px -22px -22px 22px; background: #D7261E; border-radius: 30px"></div>
+<img class="heroimg" src="images/hero.jpg" alt="A taekwondo fighter throwing a high kick at a boxer in red gloves in a dark gym" style="position: relative; width: 100%; height: 560px; object-fit: cover; display: block; border-radius: 30px; border: 2px solid #111111; box-sizing: border-box">
+<span class="bob" style="position: absolute; top: 24px; left: 24px; background: #1F4FD1; color: #FFFFFF; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px">Taekwondo</span>
+<span class="bob" style="position: absolute; top: 24px; right: 24px; background: #FFFFFF; color: #111111; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px">Boxing</span>
+<span class="bob" style="position: absolute; bottom: 24px; left: 24px; background: #C6F432; color: #111111; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px">Fitness · Yoga · Cardio</span>
+<div class="wobble" style="position: absolute; top: -26px; right: -14px; width: 120px; height: 120px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; color: #111111; font-family: 'Archivo Black', sans-serif; font-size: 18px; line-height: 1.05; text-transform: uppercase; text-align: center; display: flex; align-items: center; justify-content: center; transform: rotate(10deg); box-shadow: 0 10px 24px rgba(17,17,17,0.18)">1st class<br>free</div>
+</div>
+</section>
+
+<div aria-hidden="true" style="overflow: hidden; background: #111111; color: #FFFFFF; transform: rotate(-1.5deg); margin: 0 -20px">
+<div class="marq" style="display: flex; width: max-content; padding: 18px 0; font-family: 'Archivo Black', sans-serif; font-size: 26px; text-transform: uppercase">
+<div style="display: flex; gap: 36px; padding-right: 36px; align-items: center"><span>Taekwondo</span><span style="color: #D7261E">✶</span><span>Boxing</span><span style="color: #D7261E">✶</span><span>Fitness</span><span style="color: #D7261E">✶</span><span>Yoga</span><span style="color: #D7261E">✶</span><span>Cardio</span><span style="color: #D7261E">✶</span><span>Special kids</span><span style="color: #D7261E">✶</span><span>Kids classes</span><span style="color: #D7261E">✶</span><span>Ladies timings</span><span style="color: #D7261E">✶</span></div>
+<div style="display: flex; gap: 36px; padding-right: 36px; align-items: center"><span>Taekwondo</span><span style="color: #D7261E">✶</span><span>Boxing</span><span style="color: #D7261E">✶</span><span>Fitness</span><span style="color: #D7261E">✶</span><span>Yoga</span><span style="color: #D7261E">✶</span><span>Cardio</span><span style="color: #D7261E">✶</span><span>Special kids</span><span style="color: #D7261E">✶</span><span>Kids classes</span><span style="color: #D7261E">✶</span><span>Ladies timings</span><span style="color: #D7261E">✶</span></div>
+</div>
+</div>
+
+<section id="taekwondo" style="position: relative; overflow: hidden; background: #EAF0FD; margin-top: 64px">
+<div class="para" aria-hidden="true" style="position: absolute; top: 10px; right: -20px; font-family: 'Archivo Black', sans-serif; font-size: clamp(130px, 18vw, 280px); line-height: 1; color: transparent; -webkit-text-stroke: 2px rgba(31,79,209,0.16); white-space: nowrap">태권도</div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-wrap: wrap; gap: 72px; align-items: center">
+<div class="sl" style="flex: 1 1 460px; min-width: 0">
+<div style="position: relative; max-width: 560px; margin: 0 auto">
+<div aria-hidden="true" style="position: absolute; inset: 22px -22px -22px 22px; background: #1F4FD1; border-radius: 28px"></div>
+<img loading="lazy" class="pic" src="images/taekwondo.jpg" alt="Taekwondo athlete in a white dobok and black belt throwing a head-high kick" style="position: relative; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 28px; border: 2px solid #111111; box-sizing: border-box">
+<span style="position: absolute; left: -14px; bottom: 40px; background: #FFFFFF; color: #111111; border: 2px solid #111111; font-family: 'Archivo Black', sans-serif; font-size: 18px; text-transform: uppercase; padding: 10px 16px; border-radius: 12px">Head-high kick</span>
+</div>
+</div>
+<div class="sr" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #1F4FD1"><span style="font-family: 'Archivo Black', sans-serif; font-size: 20px; letter-spacing: 0">01</span><span style="width: 32px; height: 2px; background: #1F4FD1"></span>Taekwondo</div>
+<h2 style="margin: 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(42px, 5vw, 76px); line-height: 1; letter-spacing: -0.01em; text-transform: uppercase">Kick higher. <span style="color: #1F4FD1">Strike faster.</span></h2>
+<p style="margin: 0; font-size: 19px; color: #44464D; max-width: 540px">Olympic-style Taekwondo for kids and adults. Build flexibility, focus and explosive kicks — from your first white belt all the way to black.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #CBD7F5; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Poomsae</div><div style="color: #5C5E66; font-size: 15px">Forms &amp; technique</div></div>
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #CBD7F5; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Kyorugi</div><div style="color: #5C5E66; font-size: 15px">Sparring &amp; tournaments</div></div>
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #CBD7F5; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Self-defence</div><div style="color: #5C5E66; font-size: 15px">Real-life skills</div></div>
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #CBD7F5; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Belt gradings</div><div style="color: #5C5E66; font-size: 15px">Clear progress path</div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div role="img" aria-label="Belt path: white, yellow, green, blue, red, black" style="display: flex; gap: 6px">
+<span style="flex: 1; height: 12px; border-radius: 3px; background: #FFFFFF; box-shadow: inset 0 0 0 1.5px #111111"></span>
+<span style="flex: 1; height: 12px; border-radius: 3px; background: #F2C230"></span>
+<span style="flex: 1; height: 12px; border-radius: 3px; background: #2FAE5B"></span>
+<span style="flex: 1; height: 12px; border-radius: 3px; background: #1F4FD1"></span>
+<span style="flex: 1; height: 12px; border-radius: 3px; background: #D7261E"></span>
+<span style="flex: 1; height: 12px; border-radius: 3px; background: #111111"></span>
+</div>
+<div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #5C5E66"><span>White belt</span><span>Black belt</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<a href="#contact" style="background: #1F4FD1; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 17px; padding: 17px 26px; border-radius: 999px">Join Taekwondo</a>
+<span style="background: #FFFFFF; border: 1.5px solid #CBD7F5; color: #2A2B30; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600">Kids 5–12</span>
+<span style="background: #FFFFFF; border: 1.5px solid #CBD7F5; color: #2A2B30; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600">Teens &amp; adults</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="boxing" style="position: relative; overflow: hidden; background: #111111; color: #F6F3EE">
+<div class="para" aria-hidden="true" style="position: absolute; top: 10px; left: -20px; font-family: 'Archivo Black', sans-serif; font-size: clamp(130px, 18vw, 280px); line-height: 1; color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,0.08); white-space: nowrap">BOXING</div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-wrap: wrap; gap: 72px; align-items: center">
+<div class="sl" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #FF5A50"><span style="font-family: 'Archivo Black', sans-serif; font-size: 20px; letter-spacing: 0">02</span><span style="width: 32px; height: 2px; background: #FF5A50"></span>Boxing</div>
+<h2 style="margin: 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(42px, 5vw, 76px); line-height: 1; letter-spacing: -0.01em; text-transform: uppercase">Hands fast. <span style="color: #FF5A50">Mind faster.</span></h2>
+<p style="margin: 0; font-size: 19px; color: #C9C6BF; max-width: 540px">Footwork, combinations, pad work and heavy-bag rounds. Learn real boxing technique and get fight-fit — sparring is optional and only when your coach says you're ready.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<div class="lift" style="background: #1C1C1C; border: 1.5px solid #333333; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Footwork</div><div style="color: #A9A6A0; font-size: 15px">Stance, movement, defence</div></div>
+<div class="lift" style="background: #1C1C1C; border: 1.5px solid #333333; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Pad work</div><div style="color: #A9A6A0; font-size: 15px">1-on-1 with coach</div></div>
+<div class="lift" style="background: #1C1C1C; border: 1.5px solid #333333; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Combinations</div><div style="color: #A9A6A0; font-size: 15px">Jab, cross, hook, uppercut</div></div>
+<div class="lift" style="background: #1C1C1C; border: 1.5px solid #333333; border-radius: 16px; padding: 16px 18px"><div style="font-weight: 700; font-size: 18px">Sparring</div><div style="color: #A9A6A0; font-size: 15px">Optional, controlled</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<a href="#contact" style="background: #D7261E; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 17px; padding: 17px 26px; border-radius: 999px">Join Boxing</a>
+<span style="border: 1.5px solid #3A3A3A; color: #E4E1DA; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600">Ages 14+</span>
+<span style="border: 1.5px solid #3A3A3A; color: #E4E1DA; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600">Beginners welcome</span>
+</div>
+</div>
+<div class="sr" style="flex: 1 1 460px; min-width: 0">
+<div style="position: relative; max-width: 560px; margin: 0 auto">
+<div aria-hidden="true" style="position: absolute; inset: 22px 22px -22px -22px; background: #D7261E; border-radius: 28px"></div>
+<img loading="lazy" class="pic" src="images/boxing.jpg" alt="Boxer in red gloves throwing a straight punch in a dark gym" style="position: relative; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 28px; border: 2px solid #F6F3EE; box-sizing: border-box">
+<span style="position: absolute; right: -14px; bottom: 40px; background: #FFFFFF; color: #111111; border: 2px solid #111111; font-family: 'Archivo Black', sans-serif; font-size: 18px; text-transform: uppercase; padding: 10px 16px; border-radius: 12px">Jab · Cross · Hook</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="fitness" style="position: relative; overflow: hidden; background: #F1F6E4">
+<div class="para" aria-hidden="true" style="position: absolute; top: 10px; right: -20px; font-family: 'Archivo Black', sans-serif; font-size: clamp(130px, 18vw, 280px); line-height: 1; color: transparent; -webkit-text-stroke: 2px rgba(17,17,17,0.07); white-space: nowrap">FITNESS</div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-wrap: wrap; gap: 72px; align-items: center">
+<div class="sl" style="flex: 1 1 460px; min-width: 0">
+<div style="position: relative; max-width: 560px; margin: 0 auto">
+<div aria-hidden="true" style="position: absolute; inset: 22px -22px -22px 22px; background: #C6F432; border-radius: 28px; border: 2px solid #111111"></div>
+<img loading="lazy" class="pic" src="images/fitness.jpg" alt="Athlete doing an intense battle rope workout" style="position: relative; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 28px; border: 2px solid #111111; box-sizing: border-box">
+<span style="position: absolute; left: -14px; bottom: 40px; background: #FFFFFF; color: #111111; border: 2px solid #111111; font-family: 'Archivo Black', sans-serif; font-size: 18px; text-transform: uppercase; padding: 10px 16px; border-radius: 12px">Battle ropes</span>
+</div>
+</div>
+<div class="sr" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #3E6A00"><span style="font-family: 'Archivo Black', sans-serif; font-size: 20px; letter-spacing: 0">03</span><span style="width: 32px; height: 2px; background: #3E6A00"></span>Fitness · Yoga · Cardio</div>
+<h2 style="margin: 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(42px, 5vw, 76px); line-height: 1.05; letter-spacing: -0.01em; text-transform: uppercase">Build the <span style="background: #C6F432; padding: 0 0.12em; box-decoration-break: clone; -webkit-box-decoration-break: clone">engine.</span></h2>
+<p style="margin: 0; font-size: 19px; color: #44464D; max-width: 540px">Strength, cardio and yoga in one program. Get stronger, burn more, recover better — the conditioning that powers every kick and punch.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px">
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #111111; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column"><img loading="lazy" src="images/yoga.jpg" alt="Woman holding a warrior yoga pose" style="width: 100%; height: 140px; object-fit: cover; display: block"><div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px"><span style="align-self: flex-start; background: #C6F432; color: #111111; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px">Yoga</span><div style="color: #44464D; font-size: 15px">Flexibility, breathing &amp; recovery</div></div></div>
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #111111; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column"><img loading="lazy" src="images/cardio.jpg" alt="Athlete skipping rope fast" style="width: 100%; height: 140px; object-fit: cover; display: block"><div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px"><span style="align-self: flex-start; background: #C6F432; color: #111111; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px">Cardio</span><div style="color: #44464D; font-size: 15px">HIIT, skipping &amp; fight circuits</div></div></div>
+<div class="lift" style="background: #FFFFFF; border: 1.5px solid #111111; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column"><img loading="lazy" src="images/fitness.jpg" alt="Kettlebells and battle ropes in the gym" style="width: 100%; height: 140px; object-fit: cover; object-position: left bottom; display: block"><div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px"><span style="align-self: flex-start; background: #C6F432; color: #111111; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px">Strength</span><div style="color: #44464D; font-size: 15px">Kettlebells, bodyweight &amp; core</div></div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<a href="#contact" style="background: #111111; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 17px; padding: 17px 26px; border-radius: 999px">Join Fitness</a>
+<span style="background: #FFFFFF; border: 1.5px solid #D3DDB8; color: #2A2B30; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600">Men &amp; women</span>
+<span style="background: #FFFFFF; border: 1.5px solid #D3DDB8; color: #2A2B30; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600">Ladies-only timings</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="schedule" style="max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-direction: column; gap: 36px">
+<div class="sl" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px">
+<div>
+<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #5C5E66">Weekly schedule</div>
+<h2 style="margin: 8px 0 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 68px); line-height: 1; letter-spacing: -0.01em; text-transform: uppercase">Find your <span style="color: #D7261E">slot</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px; font-size: 15px; font-weight: 600; color: #2A2B30">
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #1F4FD1"></span>Taekwondo</span>
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #D7261E"></span>Boxing</span>
+<span style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Fitness</span>
+</div>
+</div>
+<div class="sr" style="overflow-x: auto; border: 1.5px solid #111111; border-radius: 20px; background: #FFFFFF">
+<table class="sched" style="width: 100%; min-width: 880px; border-collapse: collapse; font-size: 16px">
+<thead>
+<tr style="background: #111111; color: #FFFFFF; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase">
+<th scope="col">Time</th><th scope="col">Mon</th><th scope="col">Tue</th><th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row" style="font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 17px">7:00 AM</th>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Cardio blast</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #D7261E"></span>Boxing basics</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Yoga</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #D7261E"></span>Boxing basics</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Strength</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Yoga</span></td>
+</tr>
+<tr>
+<th scope="row" style="font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 17px">4:30 PM</th>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>Kids Taekwondo</span></td>
+<td><span style="color: #A9A6A0">—</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>Kids Taekwondo</span></td>
+<td><span style="color: #A9A6A0">—</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>Kids Taekwondo</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>Kids Taekwondo</span></td>
+</tr>
+<tr>
+<th scope="row" style="font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 17px">6:00 PM</th>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #D7261E"></span>Boxing</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>Adult Taekwondo</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #D7261E"></span>Boxing</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>Adult Taekwondo</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #D7261E"></span>Sparring</span></td>
+<td><span style="color: #A9A6A0">—</span></td>
+</tr>
+<tr>
+<th scope="row" style="font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 17px">7:30 PM</th>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Strength</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Ladies fitness</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #1F4FD1"></span>TKD sparring</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Ladies fitness</span></td>
+<td><span style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 50%; background: #C6F432; box-shadow: inset 0 0 0 1.5px #111111"></span>Cardio blast</span></td>
+<td><span style="color: #A9A6A0">—</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="plans" style="background: #FFFFFF; border-top: 1.5px solid #111111; border-bottom: 1.5px solid #111111">
+<div style="max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-direction: column; gap: 48px">
+<div class="sl" style="text-align: center">
+<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #5C5E66">Membership</div>
+<h2 style="margin: 8px 0 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 68px); line-height: 1; letter-spacing: -0.01em; text-transform: uppercase">Pick your <span style="color: #D7261E">plan</span></h2>
+</div>
+<div class="sr" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: stretch">
+<div class="lift" style="background: #F6F3EE; border: 1.5px solid #111111; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<span style="align-self: flex-start; background: #1F4FD1; color: #FFFFFF; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px">Kids Taekwondo</span>
+<div style="font-family: 'Archivo Black', sans-serif; font-size: 44px; line-height: 1">[PRICE]<span style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; color: #5C5E66"> / month</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #2A2B30">
+<li>4 kids classes a week</li><li>Belt grading included</li><li>Parent progress updates</li>
+</ul>
+<a href="#contact" style="margin-top: auto; text-align: center; border: 2px solid #111111; color: #111111; text-decoration: none; font-weight: 700; padding: 14px; border-radius: 999px">Choose plan</a>
+</div>
+<div class="lift" style="background: #111111; color: #F6F3EE; border: 1.5px solid #111111; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 18px; position: relative">
+<span style="position: absolute; top: -16px; right: 24px; background: #D7261E; color: #FFFFFF; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px">Most popular</span>
+<span style="align-self: flex-start; background: #FFFFFF; color: #111111; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px">All Access</span>
+<div style="font-family: 'Archivo Black', sans-serif; font-size: 44px; line-height: 1">[PRICE]<span style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; color: #A9A6A0"> / month</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #E4E1DA">
+<li>Unlimited Taekwondo, Boxing &amp; Fitness</li><li>Yoga &amp; cardio classes included</li><li>Open gym access</li>
+</ul>
+<a href="#contact" style="margin-top: auto; text-align: center; background: #D7261E; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 16px; border-radius: 999px">Choose plan</a>
+</div>
+<div class="lift" style="background: #F6F3EE; border: 1.5px solid #111111; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<span style="align-self: flex-start; background: #C6F432; color: #111111; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px">Single Program</span>
+<div style="font-family: 'Archivo Black', sans-serif; font-size: 44px; line-height: 1">[PRICE]<span style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; color: #5C5E66"> / month</span></div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #2A2B30">
+<li>Unlimited classes in one program</li><li>Taekwondo, Boxing or Fitness</li><li>Upgrade any time</li>
+</ul>
+<a href="#contact" style="margin-top: auto; text-align: center; border: 2px solid #111111; color: #111111; text-decoration: none; font-weight: 700; padding: 14px; border-radius: 999px">Choose plan</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" style="max-width: 1280px; margin: 0 auto; padding: 110px 24px; display: flex; flex-direction: column; gap: 44px">
+<div class="sl">
+<div style="font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: #5C5E66">Contact us</div>
+<h2 style="margin: 8px 0 0; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 68px); line-height: 1; letter-spacing: -0.01em; text-transform: uppercase">Step into the <span style="color: #D7261E">ring.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+<div class="sl" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<a href="https://wa.me/923054486950" class="lift" style="text-decoration: none; color: #111111; background: #25D366; border: 1.5px solid #111111; border-radius: 20px; padding: 22px; display: flex; gap: 18px; align-items: center">
+<span style="width: 58px; height: 58px; flex-shrink: 0; border-radius: 16px; background: #111111; color: #25D366; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M9 9.5c.3 2.2 2.3 4.2 4.5 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>
+<span style="display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase">WhatsApp — quick reply</span><span style="font-family: 'Archivo Black', sans-serif; font-size: 26px">0305 4486950</span></span>
+</a>
+<a href="tel:+923054486950" class="lift" style="text-decoration: none; color: #111111; background: #FFFFFF; border: 1.5px solid #111111; border-radius: 20px; padding: 22px; display: flex; gap: 18px; align-items: center">
+<span style="width: 58px; height: 58px; flex-shrink: 0; border-radius: 16px; background: #D7261E; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg></span>
+<span style="display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5E66">Call us</span><span style="font-family: 'Archivo Black', sans-serif; font-size: 26px">0305 4486950</span></span>
+</a>
+<div style="background: #FFFFFF; border: 1.5px solid #111111; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; gap: 14px; align-items: flex-start"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0; margin-top: 2px"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" fill="none" stroke="#D7261E" stroke-width="2" stroke-linejoin="round"></path><circle cx="12" cy="10" r="2.5" fill="none" stroke="#D7261E" stroke-width="2"></circle></svg><span><span style="display: block; font-weight: 700">Visit us</span><span style="color: #5C5E66">[Club address, area, city]</span></span></div>
+<div style="display: flex; gap: 14px; align-items: flex-start"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0; margin-top: 2px"><circle cx="12" cy="12" r="9" fill="none" stroke="#1F4FD1" stroke-width="2"></circle><path d="M12 7v5l3 2" fill="none" stroke="#1F4FD1" stroke-width="2" stroke-linecap="round"></path></svg><span><span style="display: block; font-weight: 700">Opening hours</span><span style="color: #5C5E66">[Mon–Sat · morning &amp; evening times]</span></span></div>
+<div class="ph" role="img" aria-label="Map placeholder" style="height: 160px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #5C5E66; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">[Google Map]</div>
+</div>
+</div>
+<form name="free-trial" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="sr" style="flex: 1 1 520px; min-width: 0; background: #FFFFFF; border: 1.5px solid #111111; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 18px; box-sizing: border-box; box-shadow: 10px 10px 0 #111111">
+<input type="hidden" name="form-name" value="free-trial"><p style="display:none"><label>Leave empty <input name="bot-field"></label></p>
+<div>
+<div style="font-family: 'Archivo Black', sans-serif; font-size: 30px; text-transform: uppercase; line-height: 1.1">Book a free trial</div>
+<div style="color: #5C5E66; margin-top: 6px">Fill this in and we'll call you back the same day.</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="c-name" style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2A2B30">Full name</label><input id="c-name" name="name" required class="field" type="text" placeholder="Your name"></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="c-phone" style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2A2B30">Phone / WhatsApp</label><input id="c-phone" name="phone" class="field" type="tel" required placeholder="03XX XXXXXXX"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="c-email" style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2A2B30">Email (optional)</label><input id="c-email" name="email" class="field" type="email" placeholder="you@email.com"></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="c-prog" style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2A2B30">Program</label><select id="c-prog" name="prog" class="field"><option>Taekwondo</option><option>Kids Taekwondo</option><option>Boxing</option><option>Fitness / Yoga / Cardio</option><option>All Access</option><option>Special Kids (Autism / ADHD)</option><option>Ladies section</option></select></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="c-time" style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2A2B30">Preferred time</label><select id="c-time" name="time" class="field"><option>Morning</option><option>Evening</option><option>Weekend</option></select></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="c-msg" style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2A2B30">Message</label><textarea id="c-msg" name="msg" class="field" rows="4" placeholder="Age, experience, any questions…" style="resize: vertical"></textarea></div>
+<button type="submit" style="min-height: 58px; border: 0; border-radius: 999px; background: #D7261E; color: #FFFFFF; font: 700 17px 'Space Grotesk', sans-serif; cursor: pointer">Send — book my free class</button>
+<div style="text-align: center; color: #5C5E66; font-size: 15px">Prefer chat? <a href="https://wa.me/923054486950" style="color: #1C7C3F; font-weight: 700">Message us on WhatsApp</a></div>
+</form>
+</div>
+</section>
+
+<footer style="background: #111111; color: #F6F3EE">
+<div aria-hidden="true" style="display: flex; height: 5px"><span style="flex: 1; background: #1F4FD1"></span><span style="flex: 1; background: #D7261E"></span><span style="flex: 1; background: #C6F432"></span></div>
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px 24px 32px; display: flex; flex-wrap: wrap; gap: 36px; justify-content: space-between; align-items: flex-start">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 360px">
+<span style="font-family: 'Archivo Black', sans-serif; font-size: 32px">IRONKICK</span>
+<span style="color: #A9A6A0">Taekwondo, Boxing &amp; Fitness Club. Train hard, stay humble.</span>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-direction: column; gap: 10px"><a class="fl" href="#taekwondo">Taekwondo</a><a class="fl" href="#boxing">Boxing</a><a class="fl" href="#fitness">Fitness</a><a class="fl" href="special-kids.html">Special Kids</a><a class="fl" href="ladies.html">Ladies section</a><a class="fl" href="#schedule">Schedule</a></nav>
+<div style="display: flex; flex-direction: column; gap: 10px"><a class="fl" href="tel:+923054486950">Call: 0305 4486950</a><a class="fl" href="https://wa.me/923054486950" style="color: #25D366; font-weight: 700">WhatsApp: 0305 4486950</a><a class="fl" href="#top">Instagram</a><a class="fl" href="#top">Facebook</a></div>
+</div>
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 24px 32px; color: #8A877F; font-size: 14px">© [Year] Ironkick Fight &amp; Fitness Club</div>
+</footer>
+
+<a class="pulse" href="https://wa.me/923054486950" aria-label="Chat with us on WhatsApp" style="position: fixed; right: 24px; bottom: 24px; z-index: 60; width: 64px; height: 64px; border-radius: 50%; background: #25D366; border: 2px solid #111111; color: #111111; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(17,17,17,0.3)"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M9 9.5c.3 2.2 2.3 4.2 4.5 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></a>
+
+</div>
+</body>
+</html>
